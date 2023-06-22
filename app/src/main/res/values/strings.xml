@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Assignment 2</string>
-    <string name="active_journey">Active Journey</string>
+    <string name="active_journey">Animal World Explorer</string>
     <string name="logo">Logo</string>
     <string name="add_workout">Add Workout</string>
     <string name="log_workout">Log workout</string>
@@ -14,4 +14,6 @@
     <string name="description_placeholder">his class will creatively focus on exercises pertaining to your arms, butt and core. You will rethink the way you define fatigue and find new boundaries that challenge your muscular endurance and strength. This is a great compliment to what you do for cardio outside of class. All-Levels.</string>
     <string name="workout_name_placeholder">Quick Workout</string>
     <string name="name_your_workout">Name Your Workout</string>
+    <string name="title_activity_card_view">CardViewActivity</string>
+    <string name="title_activity_view_animal">ViewAnimalActivity</string>
 </resources>

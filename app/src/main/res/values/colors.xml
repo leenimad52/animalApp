@@ -5,6 +5,9 @@
     <color name="splashTxt">#006400</color>
     <color name="background">#DFF0D8</color>
     <color name="smallBg">#0F5132</color>
+    <color name="cardview">#9E9E9E</color>
+    <color name="title">#607D8B</color>
+    <color name="anName">#FFFFFF</color>
 
 
 
