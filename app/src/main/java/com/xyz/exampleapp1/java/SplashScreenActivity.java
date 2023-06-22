@@ -31,7 +31,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         imageViewLogo.setAnimation(logoAnimation);
         Handler handler = new Handler();
         handler.postDelayed(() -> {
-            Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
+            Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
             startActivity(intent);
             finish();
         }, 2000);

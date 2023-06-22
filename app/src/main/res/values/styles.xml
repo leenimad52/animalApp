@@ -16,6 +16,11 @@
         <item name="android:fontFamily">serif</item>
     </style>
 
+    <style name="label">
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">22sp</item>
+    </style>
 <!--    -->
     <!--    TEXT STYLES-->
     <style name="text">
@@ -45,11 +50,7 @@
         <item name="android:textSize">18sp</item>
     </style>
 
-    <style name="text.form_label">
-        <item name="android:layout_marginTop">40dp</item>
-        <item name="android:textColor">@color/text_secondary</item>
-        <item name="android:textSize">22sp</item>
-    </style>
+
 
     <style name="text.form_control">
         <item name="android:layout_marginTop">5dp</item>
