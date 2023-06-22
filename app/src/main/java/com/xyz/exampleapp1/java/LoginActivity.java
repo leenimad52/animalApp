@@ -5,9 +5,11 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -54,7 +56,21 @@ public class LoginActivity extends AppCompatActivity {
                 editor.commit();
             }
         }
-        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-        startActivity(intent);
+
+        if(checkValues()==true){
+            Toast.makeText(LoginActivity.this, "Please enter username and password!", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            startActivity(intent);
+        }
+    }
+
+    public boolean checkValues()
+    {
+        if (TextUtils.isEmpty(user.getText()) || TextUtils.isEmpty(pass.getText())  ){
+            return true;
+        }
+        else return false;
     }
 }
