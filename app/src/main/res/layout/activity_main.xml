@@ -12,7 +12,6 @@
         android:layout_marginEnd="-9dp"
         android:layout_marginBottom="9dp"
         android:rotationX="35"
-        android:text="@string/hi_leen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.44"
