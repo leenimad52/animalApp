@@ -14,9 +14,9 @@ import java.util.ArrayList;
 
 public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapter.AnimalViewHolder>{
 
-    ArrayList<animal2> animals;
+    ArrayList<Animal> animals;
 
-    public RecyclerViewAdapter(ArrayList<animal2> animals) {
+    public RecyclerViewAdapter(ArrayList<Animal> animals) {
         this.animals = animals;
     }
 
@@ -32,9 +32,13 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapt
     ///////////////////////////////
     @Override
     public void onBindViewHolder(@NonNull AnimalViewHolder holder, int position) {
-     animal2 a=animals.get(position);
-     holder.imageView.setImageResource(a.getImg());
+     Animal a=animals.get(position);
+     holder.imageView.setImageResource(a.getImage());
      holder.txtName.setText(a.getName());
+     holder.txtHabitat.setText(a.getHabitat());
+     holder.txtDiet.setText(a.getDiet());
+     holder.txtBehavior.setText((a.getBehavior()));
+     holder.txtFacts.setText(a.getFunFacts());
     }
     ///////////////////////////////
     @Override
@@ -49,17 +53,18 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapt
         TextView txtName;
         TextView txtHabitat;
         TextView txtDiet;
-        TextView textBehavior;
+        TextView txtBehavior;
         TextView txtFacts;
-
-
 
         public AnimalViewHolder(@NonNull View itemView) {
             super(itemView);
            card=(CardView) itemView.findViewById(R.id.card);
            imageView=(ImageView)itemView.findViewById(R.id.imageView);
            txtName=(TextView) itemView.findViewById(R.id.txtName);
-
+           txtHabitat=(TextView) itemView.findViewById(R.id.txtHabitat);
+           txtDiet=(TextView) itemView.findViewById(R.id.txtDiet);
+           txtBehavior=(TextView) itemView.findViewById(R.id.textBehavior);
+           txtFacts=(TextView) itemView.findViewById(R.id.txtFacts);
         }
         //
     }
